@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+    <div class="splits">
+        <h2>Splits :</h2>
+        <ul id="splits">
+
+        </ul>   
+    </div>
+
+    <center>
+        <div class="timer">
+            <div class="mode">
+                <select name="mode" id="mode">
+                    <option value="stopwatch">
+                        stopwatch
+                    </option>
+                    <option value="count_d">
+                        timer
+                    </option>
+                </select>
+            </div>
+            <div class="display" onclick="status()">
+                <input type="number" value="0" id="mn" min="0" size="4" title="Enter minutes">
+                <span>:</span>
+                <input type="number" value="0" id="sc" min="0" size="4" title="Enter seconds">
+            </div>
+
+            <div class="btns">
+                <input type="button" id="toggle" value="Start" onclick="toggle()">
+                <input type="button" id="in" value="Reset" onclick="toggle2()">
+            </div>
+            
+        </div>
+
+        
+    </center>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
